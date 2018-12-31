@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header text-center">分页</h3>
+		<p>
+			..pagination-lg：大分页表格<br />
+			..pagination-sm：小分页表格<br />
+		</p>
+		<hr />
+		
+<!--*******************************************************************-->		
+		<p>表格型上下页  ul.pagination</p>
+		<ul class="pagination">
+			<li class="disabled"><a href="">&laquo;</a></li>
+			<li class="active"><a href="">1</a></li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<li><a href="">&raquo;</a></li>
+		</ul>
+		
+		<ul class="pagination pagination-lg">
+			<li class="disabled"><a href="">&laquo;</a></li>
+			<li class="active"><a href="">1</a></li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<li><a href="">&raquo;</a></li>
+		</ul>
+		
+		<ul class="pagination pagination-sm">
+			<li class="disabled"><a href="">&laquo;</a></li>
+			<li class="active"><a href="">1</a></li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<li><a href="">&raquo;</a></li>
+		</ul>
+		<hr />
+		
+<!--*******************************************************************-->		
+		<p>居中的上下页 ul.pager</p>
+		<ul class="pager">
+			<li class="disabled"><a href="">&laquo;</a></li>
+			<li class="active"><a href="">上一页</a></li>
+			<li><a href="">下一页</a></li>
+			<li><a href="">&raquo;</a></li>
+		</ul>
+		<hr />
+		
+		
+<!--*******************************************************************-->		
+		<p>左右对齐上下页</p>
+		<pre>
+			ul.pager
+				li.previous
+				li.next
+			/ul	
+		</pre>
+		<ul class="pager">
+			<li class="previous"><a href="">上一页</a></li>
+			<li class="next"><a href="">下一页</a></li>
+		</ul>
+		
+		
+	</body>
+</html>

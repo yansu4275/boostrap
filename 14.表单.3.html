@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+			
+		<h3 class="page-header text-center">静态控件</h3>
+		<p class="lead">如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 p 元素添加 .form-control-static 类即可。</p>
+		<form action="" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label for="" class="col-sm-2 control-label">账 号：</label>
+				<div class="col-sm-3">
+					<p class="form-control-static">123456789@qq.com</p>
+				</div>
+			</div>
+					
+			<div class="form-group">
+				<label for="" class="col-sm-2 control-label">密 码：</label>
+				<div class="col-sm-3">
+					<input type="password" name="" id="" value="" class="form-control"/>
+				</div>
+					
+			</div>
+		</form>
+		<hr />
+		
+		
+<!--**************************************************************************-->		
+
+		<h3 class="page-header text-center">禁用 displayed 和只读 readonly</h3>
+		<input type="text" name="" id="" value="" class="form-control" disabled/>
+		<input type="text" name="" id="" value="" class="form-control" readonly/>
+		
+<!--**************************************************************************-->		
+
+		
+		
+		<h3 class="page-header text-center">全部禁用 fileldset disabled</h3>
+		<p class="lead">在 form 标签下添加一个 fieldset 标签，并添加 disabled</p>
+		<form action="" method="post">
+			<fieldset disabled>
+				<div class="form-group">
+					<label for=""></label>
+					<input type="text" name="" id="" value="" class="form-control"/>
+				</div>
+				
+				<div class="form-group">
+					<input type="submit" name="" id="" value="全部禁用" class="btn" />
+				</div>
+				
+			</fieldset>			
+		</form>
+		<hr />
+<!--*****************************************************************-->		
+
+
+		<h3 class="page-header text-center">表单框颜色</h3>
+		<p class="lead">给 form 下的 div 设置has-*** 改变颜色，列表，单复选都可以<br />
+			表单前的 label 要添加 control-label 才能有效果	
+		</p>
+		
+		<form action="" method="post">
+			<div class="form-group has-success">
+				<label for="" class="control-label">..has.success：</label>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>
+			<div class="form-group has-warning">
+				<label for="" class="control-label">..has.warning：</label>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>
+			<div class="form-group has-error">
+				<label for="" class="control-label">..has.error：</label>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>
+			
+			<div class="form-group has-error">
+				<label for="">单选：</label>
+				<div class="radio-inline">
+					<label for="">
+						<input type="radio" name="gander" id="" value=""/>男
+					</label>
+				</div>
+				
+				<div class="radio-inline">
+					<label for="">
+						<input type="radio" name="gander" id="" value=""/>女
+					</label>
+				</div>
+			</div>
+			
+		</form>
+<!--*************************************************************************-->	
+		<h3 class="page-header text-center">表单框內图标</h3>
+		
+		<form action="" method="post">
+			<div class="form-group has-error has-feedback">
+				<input type="text" name="" id="" value="" class="form-control"/>
+				<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+				
+			</div>
+			
+			
+			
+			<div class="form-group has-success has-feedback">
+  				<label class="control-label" for="inputSuccess2">Input with success</label>
+  				<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+  				
+  				<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+			</div>
+			
+		</form>
+		<hr />
+		
+<!--**************************************************************************-->
+		<h3 class="page-header text-center">表单框大小</h3>
+		<p class="lead">给 div 或 input 添加 ..input-lg 和 ..input-sm 控制大小</p>
+		<form action="" method="post" class="form-horizontal">
+			<div class="form-groud ">
+				<label for="" class="col-sm-2 control-label">大表单：..input-lg</label>
+				<div class="col-md-10 input-group-lg">
+					<input type="text" name="" id="" value="" class="form-control"/>
+				</div>
+			</div>
+			<div class="form-groud">
+				<label for="" class="col-sm-2 control-label">小表单：..input-sm</label>
+				<div class="col-md-10">
+					<input type="text" name="" id="" value="" class="form-control input-sm"/>
+				</div>
+			</div>
+			
+		</form>
+		<hr />
+		
+<!--********************************************************************-->		
+		<h3 class="page-header text-center">表单框帮助提示</h3>
+		<form action="" method="post">
+			<div class="form-groud">
+				<label for="">姓名：</label>
+				<input type="text" name="" id="" value="" class="form-control"/>
+				<p class="help-block">这里是帮助提示，给要提示的内容加上 ..help-block，颜色变浅灰色</p>
+			</div>
+			
+		</form>
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		
+	</body>
+</html>

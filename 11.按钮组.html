@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header">按钮组 div.btn-group</h3>
+		
+		
+		<div class="btn-group-vertical">
+			<button class="btn btn-primary">正常大小</button>
+			<button class="btn btn-primary">..btn-group-vertical 垂直排列</button>
+		</div>
+		<br>
+		
+		<div class="btn-group btn-group-lg">
+			<button class="btn btn-primary">超大</button>
+			<button class="btn btn-primary">..btn-group-lg</button>
+		</div>
+		
+		<div class="btn-group btn-group-sm">
+			<button class="btn btn-primary">小按钮</button>
+			<button class="btn btn-primary">..btn-group-sm</button>
+		</div>
+		
+		<div class="btn-group btn-group-xs">
+			<button class="btn btn-primary">超小按钮</button>
+			<button class="btn btn-primary">..btn-group-xs</button>
+		</div>
+		<hr />
+		
+		
+		
+		
+<!--********************************************************************************-->		
+		<h3 class="page-header">按钮工具栏</h3>
+		<p class="lead">按钮工具栏就是讲多个按钮组的 div.btn-group 放入 div.btn-toolbar 中</p>
+        <div class="btn-toolbar">
+            <div class="btn-group">
+            	<button class="btn btn-primary">按钮</button>
+            	<button class="btn btn-primary">按钮</button>
+            	<button class="btn btn-primary">按钮</button>
+            </div>
+            <div class="btn-group">
+            	<button class="btn btn-primary">按钮</button>
+            	<button class="btn btn-primary">按钮</button>
+            	<button class="btn btn-primary">按钮</button>
+            	
+            </div>
+        </div>
+		
+		
+		
+<!--*******************************************************************-->		
+		<h3 class="page-header">嵌套</h3>
+		<p>要在嵌套的那个 button 按钮中添加 ..dropdown-toggle ，不然边角不是圆角</p>
+		
+		
+		<div class="btn-group">
+			<button class="btn btn-primary">1111</button>
+			
+			<div class="btn-group">
+				<button class="btn btn-primary " data-toggle="dropdown">
+					更多 <span class="caret"></span>
+				</button>
+				
+				<ul class="dropdown-menu">
+					<li><a href="">000</a></li>
+					<li><a href="">000</a></li>
+					<li><a href="">000</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="btn-group">
+			<button class="btn btn-primary">1111</button>
+			
+			<div class="btn-group">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					更多 <span class="caret"></span>
+				</button>
+				
+				<ul class="dropdown-menu">
+					<li><a href="">000</a></li>
+					<li><a href="">000</a></li>
+					<li><a href="">000</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<hr />
+		
+
+<!--*********************************************************************************-->
+		<h3 class="page-header">两端对齐的按钮</h3>
+		<p>让一组按钮填满、等分父元素宽度</p>
+		<p>一个按钮组中包含多个按钮组，且子按钮组中只有一个按钮</p>
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<button class="btn">按钮</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn">按钮</button>
+			</div>
+			<div class="btn-group">
+				<button class="btn">按钮</button>
+			</div>
+		</div>
+		
+	</body>
+</html>

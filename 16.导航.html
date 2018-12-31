@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+<!--*************************************************************************-->		
+		<h3 class="page-header text-center">标签页式导航</h3>
+		
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="">..nav nav-tabs</a></li>
+			<li class=""><a href="">标签页式</a></li>
+			<li class=""><a href="">导航</a></li>
+		</ul>
+		
+		<div class="aaa">..nav nav-tabs：标签页<br />
+			导航栏鼠标效果：当鼠标移动到一个 li 时，为这个标签添加 ..active ，除了这个标 li 的其余 li 移除 ..active 。<br />
+			相应的部分随导航变动：给所有的 div.row 设置 display:none 隐藏，在鼠标操控导航栏时,相应部分显示，其余部分隐藏
+		</div>
+		<div class="aaa">..nav nav-tabs：标签页<br />
+			导航栏鼠标效果：当鼠标移动到一个 li 时，为这个标签添加 ..active ，除了这个标 li 的其余 li 移除 ..active 。<br />
+			相应的部分随导航变动：给所有的 div.row 设置 display:none 隐藏，在鼠标操控导航栏时,相应部分显示，其余部分隐藏
+		</div>
+		<div class="aaa">..nav nav-tabs：标签页<br />
+			导航栏鼠标效果：当鼠标移动到一个 li 时，为这个标签添加 ..active ，除了这个标 li 的其余 li 移除 ..active 。<br />
+			相应的部分随导航变动：给所有的 div.row 设置 display:none 隐藏，在鼠标操控导航栏时,相应部分显示，其余部分隐藏
+		</div>
+			
+		
+		<!--*******************************************************-->
+		<script>
+			$('li').mouseenter(function(){
+				$(this).addClass('active');
+				$('.nav-tabs li').not($(this)).removeClass('active');
+				
+				idx=$(this).index('.nav-tabs li');
+				$('.aaa').eq(idx).show(500);
+				$('.aaa').not($('.aaa').eq(idx)).hide();
+			})
+			$('.aaa').hide();		/*除第一个..row外的所有..row设置隐藏*/
+			$('.aaa').eq(0).show(500);		
+		</script>
+		<!--********************************************************-->
+	
+		<hr />
+		<hr />
+<!--*******************************************************************-->		
+<!--*****************************************************************-->		
+<!--*******************************************************************-->		
+		
+		<h3 class="page-header text-center">胶囊式导航，竖排</h3>
+		
+		<ul class="nav nav-pills nav-stacked col-md-2">
+			<li class="active"><a href="">ul.nav nav-pills</a></li>
+			<li class=""><a href="">胶囊式</a></li>
+			<li class=""><a href="">ul.nav-stcked 导航竖排</a></li>	
+		</ul>
+		<div class="">
+			
+			<div class="bbb">网页中出现两组导航时，要用不同的选择器，否则会乱
+				<br />
+			</div>
+			<div class="bbb">ul.nav-stcked 胶囊竖排
+			</div>
+			<div class="bbb">网页中出现两组导航时，要用不同的选择器，否则会乱
+			</div>
+		</div>
+		
+		<script>
+			$('.nav-pills li').mouseenter(function(){
+				$(this).addClass('active');
+				$('.nav-pills li').not($(this)).removeClass('active');
+				
+				idx=$(this).index('.nav-pills li');
+				$('.bbb').eq(idx).show();
+				$('.bbb').not($('.bbb').eq(idx)).hide();
+			})
+			$('.bbb').hide();
+			$('.bbb').eq(0).show();
+		</script>
+		
+
+<!--*******************************************************************-->		
+<!--*****************************************************************-->		
+<!--*******************************************************************-->		
+		<hr />
+		
+		
+		<h3 class="page-header text-center">两端对齐响应式，ul.nav-justified</h3>
+				
+		<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="">响应式导航</a></li>
+			<li><a href="">响应式导航</a></li>
+			<li><a href="">响应式导航</a></li>
+		</ul>
+		
+<!--*******************************************************************-->
+<!--****************************************************************-->	
+		<hr />
+
+
+
+		<h3 class="page-header text-center">禁用的导航， li.disabled</h3>
+				
+		<ul class="nav nav-pills">
+			<li class="active disabled"><a href="">禁用的导航</a></li>
+			<li class="disabled"><a href="">..disabled</a></li>
+			<li><a href="">禁用导航</a></li>
+		</ul>		
+		
+<!--*******************************************************************-->
+<!--****************************************************************-->	
+		<hr />
+
+
+
+		<h3 class="page-header text-center">导航中嵌入下拉菜单</h3>
+				
+		<ul class="nav nav-pills">
+			<li class="active"><a href="">禁用的导航</a></li>
+			<li><a href="">..</a></li>
+			
+			<li>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" >下拉菜单<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+				</ul>
+			</li>
+			
+		</ul>		
+				
+		
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+	</body>
+</html>

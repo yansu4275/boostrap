@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="/js/bootstrap.js"></script>
+		
+		<style type="text/css">
+			.col-md-3,.col-md-6{
+				background: yellowgreen;
+			}
+			img{
+				width: 100%;
+			}
+			.col-md-3{
+				margin-bottom: 15px;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">          
+			<h1>Bootstrap前端框架</h1>
+<!--栅格系统，必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中
+	row将页面等分为12格，子元素每个占几格
+	如下，col-md-3，既一个子元素占3格；col-lg-6，既一个种子元素占6格
+	类前缀：.col-xs-	，.col-sm-	，.col-md-	，.col-lg-   
+		.col-md-较为常用******************************************************
+		类前缀后面必须为整数***************************************************
+		子元素自带15px左右外边距~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		
+********col-md-offset-			空格.如下：	
+* ******pull-left,pull-rigt		浮动
+-->			
+			<div class="row">
+				<div class="col-md-3">
+					<img src="img/1.jpg"/>
+				</div>
+				<div class="col-md-3 col-md-offset-3">  <!--先空三格，然后排列-->
+					<img src="img/1.jpg"/>
+				</div>
+				<div class="col-md-3">
+					<img src="img/1.jpg"/>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-5 pull-right">  <!--pull-right，向右浮动-->
+					<img src="img/1.jpg"/>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="img/QQ图片20170908151832.png"/>
+				</div>
+				<div class="col-lg-6">
+					<img src="img/QQ图片20170908151832.png"/>
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+		
+	</body>
+</html>

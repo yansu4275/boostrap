@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header">表单</h3>
+		<p class="lead">每一小组表单外面添加 div.form-group ，input添加 ..form-control</p>
+		<p class="lead">注：..form-control：让 input 响应式</p>
+		<hr />
+<!--********************************************************************-->
+		
+		    
+		<form action="" method="post">
+<!--姓名密码-->			
+			<div class="form-group">
+				<label for="aaa">姓 名：</label>
+				<input type="text" name="" id="aaa" value="" class="form-control" placeholder="0000000"/>
+			</div>
+			
+			<div class="form-group">
+				<label for="">密 码：</label>
+				<input type="password" name="" id="" value="" class="form-control"/>
+			</div>
+
+			<hr />
+<!--taxtarea 文本域-->
+			<div class="form-group">
+				<label for="">简介： textarea 文本域</label>
+				<textarea name="" rows="5" cols="" class="form-control"></textarea>
+			</div>
+	
+	
+			<hr />
+<!--select 下拉列表 -->	
+			<div class="form-group">
+				<label for="bbb">城市： select option 下拉列表</label>
+				<select name="" id="bbb" class="form-control">
+					<option value="" >北京</option>
+					<option value="" selected="selected">南京</option>
+					<option value="">上海</option>
+				</select>
+			</div>
+			
+			
+			
+			<hr />
+<!--单复选-->
+			<div class="form-group">
+				<label for="">性别：..radio 单选，name必须要相同才能单选</label>
+				<div class="radio">
+					<label>
+						<input type="radio" name="gander" id="" value="" checked="checked"/> 男
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="gander" id="" value="" /> 女
+					</label>
+				</div>
+				
+			</div>
+
+			<div class="form-group">
+				<label for="">爱好：</label>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="" id="" value="" />篮球
+					</label>
+					<label>
+						<input type="checkbox" name="" id="" value="" />篮球
+					</label>
+					<label>
+						<input type="checkbox" name="" id="" value="" />篮球
+					</label>
+				</div>
+			</div>
+			<hr>
+			
+			
+<!--文件上传-->
+			 <div class="form-group">
+                <label for="exampleInputFile">文件上传：</label>
+                <input type="file" id="exampleInputFile" style="background: red">
+             </div>
+			
+			
+			
+			
+			<hr />
+<!--确定，重置-->
+			<div class="form-group">
+				<input type="submit" name="" id="" value="确定"  class="btn btn-primary"/>
+				<input type="reset" name="" id="" value="重置" class="btn btn-danger"/>
+			</div>
+			
+		</form>
+		<hr>
+		<hr>
+<!--********************************************************************************-->	
+        
+        
+		
+		
+		
+	</body>
+</html>

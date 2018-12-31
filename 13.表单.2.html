@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header text-center">内联表单 form.form-inline</h3>	
+        <p class="lead">在 form 标签中加入 ..form-inline 可以使 form 中的所有表单变成内联样式，排成一行</p>
+        
+        <form action="" method="post" class="form-inline">
+			<div class="form-group">
+				<label for="">姓名：</label>
+				<input type="text" name="" id="" value="" class="form-control" placeholder="111111111" />
+			</div>
+			<div class="form-group">
+				<label for="">密码：</label>
+				<input type="password" name="" id="" value="" class="form-control"/>
+			</div>
+			
+			<div class="form-group">
+				<input type="submit" name="" id="" value="确定" class="btn btn-primary" />
+				<input type="reset" name="" id="" value="重置" class="btn btn-danger" />
+			</div>
+			
+        </form>
+		<hr />
+ <!--*********************************************************************************-->       
+        <p class="lead">..inout-group 与 ..input-group-addon 创建有特殊符号前后缀的表单</p>                    
+        <form action="" method="post" class="form-inline">
+			<div class="form-group">
+				<label for="exampleInputAmount">价格</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text" name="" id="exampleInputAmount" class="form-control" placeholder="请输入金额"/>
+					<div class="input-group-addon">.00</div>
+				</div>
+			</div>        	
+						
+			<div class="form-group">
+				<input type="submit" name="" id="" value="确定" class="btn btn-primary"/>
+			</div>
+			
+        </form>
+        <hr>
+        <hr>
+<!--*************************************************************-->	
+
+        
+		<h3 class="page-header text-center">水平排列的表单 form.form-horizontal </h3>
+		<p class="lead">给 form 设置 ..form-horizontal 使每个 div 中的 标签水平排列</p>
+		<p class="lead">可以给 div 中的 label 和 input 的父元素 div 设置栅栏宽度，使其响应布局**************************************</p>
+		<p class="lead">*******************..conrrol-label 使 label 中的内容居中靠左排列*************************</p>
+		<form action="" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label for="" class="col-md-1 control-label">姓名：</label>
+				<div class="col-md-3">
+					<input type="submit" name="" id="" value="" class="form-control" />
+				</div>
+			</div>	
+			
+			<div class="form-group">
+				<label for="" class="col-md-1 control-label">密码：</label>
+				<div class="col-md-3">
+					<input type="password" name="" id="" value="" class="form-control" />
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-md-3 col-md-offset-1">
+					<input type="submit" name="" id="" value="确定" class="btn btn-primary"/>
+					<input type="reset" name="" id="" value="重置" class="btn btn-danger"/>
+				</div>
+			</div>
+			
+		</form>
+		<hr />
+		
+		
+		
+<!--**********************************************************************************-->
+		<h3 class="page-header text-center">单复选水平排列,..radio-inline, ..checkbox-inline</h3>
+		
+		<pre>
+		（div class="radio")
+			（label for="radio" class="radio-inline"）
+				（input type="radio" name="radio"  /）
+			（/label）
+		（/div）
+			
+		</pre>
+		
+		<form action="" method="post">
+			<label for="">性别：</label>
+			<div class="radio">
+				<label for="radio1" class="radio-inline">
+					<input type="radio" name="gander" id="radio1" value="" />男
+				</label>
+				<label for="radio2" class="radio-inline">
+					<input type="radio" name="gander" id="radio2" value="" />女
+				</label>
+			</div>
+			
+			<label for="">爱好：</label>
+			<div class="checkbox">
+				<label for="checkbox1" class="checkbox-inline">
+					<input type="checkbox" name="love" id="checkbox1" value="" />篮球
+				</label>
+				<label for="checkbox2" class="checkbox-inline">
+					<input type="checkbox" name="love" id="checkbox1" value="" />足球
+				</label>
+			</div>
+						
+		</form>
+		
+<!--****************************************************************************-->		
+		
+		
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+	</body>
+</html>

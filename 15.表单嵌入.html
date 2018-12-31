@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header text-center">输入框组及其大小</h3>
+		<p class="lead">div.input-group ， span.input-group-addon 嵌入<br />
+			大输入框组 ..inpu-group-lg<br />
+			大输入框组 ..inpu-group-sm</p>
+			
+		<form action="" method="post">
+			
+			<div class="input-group">
+				<span class="input-group-addon">原始</span>
+			</div>
+			
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon">$</span>
+				<input type="text" name="" id="" value="" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>			
+			
+			<div class="input-group">
+				<span class="input-group-addon">$</span>
+				<input type="text" name="" id="" value="" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			
+			<div class="input-group input-group-sm">
+				<span class="input-group-addon">$</span>
+				<input type="text" name="" id="" value="" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+		</form>
+		<hr />
+		
+		
+<!--****************************************************************************-->		
+
+		<h3 class="page-header text-center">嵌入选择按钮</h3>
+		<p class="lead">创建技能输入又能选择的表单</p>
+		<form action="" method="post">
+	<!--单选****************************************-->		
+			<p class="lead">复选</p>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<input type="checkbox" name="" id="" value="" />
+				</div>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>			
+			<div class="input-group">
+				<div class="input-group-addon">
+					<input type="checkbox" name="" id="" value="" />
+				</div>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>
+			
+	<!--复选***************************************-->		
+			<p class="lead">单选</p>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<input type="radio" name="radio" id="" value="" />
+				</div>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>			
+			<div class="input-group">
+				<div class="input-group-addon">
+					<input type="radio" name="radio" id="" value="" />
+				</div>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>
+		</form>
+		<hr />
+		
+		
+<!--**************************************************************************-->		
+
+		<h3 class="page-header text-center">额外按钮</h3>
+		<p class="lead">..input-group-btn 表单中添加按钮</p>
+		<form action="" method="post">
+			<div class="input-group">
+				<div class="input-group-btn">
+					<button class="btn btn-danger">确定</button>					
+				</div>
+				<input type="text" name="" id="" value="" class="form-control"/>
+			</div>			
+		</form>
+		<hr />
+		
+<!--**************************************************************************-->
+		<h3 class="page-header text-center">嵌入按钮下拉列表</h3>
+		<form action="" method="post">
+			
+			<div class="input-group">
+				<input type="text" name="" id="" value="" class="form-control"/>
+				
+				<div class="input-group-btn">
+					<button class="btn btn-danger" data-toggle="dropdown">下拉
+						<span class="caret"></span>
+					</button>					
+				
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>000000</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			
+			<p class="lead">按钮靠右时要给 button 加上 ..dropdown-toggle 变成圆角，和按钮组一样</p>
+			<div class="input-group">
+				<input type="text" name="" id="" value="" class="form-control"/>
+				
+				<div class="input-group-btn">
+					<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">下拉
+						<span class="caret"></span>
+					</button>					
+				
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>000000</li>
+					</ul>
+				</div>
+				
+			</div>			
+		</form>
+		
+		
+<!--*************************************************************-->
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+		<hr>
+	</body>
+</html>

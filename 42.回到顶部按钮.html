@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/docs.min.js"></script>
+		
+		<style type="text/css">
+			.top{
+				cursor: pointer;
+				width: 100px;
+				height: 50px;
+				background: #000;
+				border-radius: 10px;
+				color: #fff;
+				text-align: center;
+				line-height: 50px;
+				font-size: 30px;
+				position: fixed;
+				bottom: 100px;
+				right: 50px;
+				display: none;
+			}
+			.top:hover{
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<h3 class="page-header text-center">回到顶部按钮</h3>
+		<div class="row">
+			
+			<div class="col-md-11">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h3>ajax</h3>
+						</div>
+					</div>
+					
+					<div class="panel-body">
+						<img src="holder.js/100%x300"/>
+					</div>
+					
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h3>ajax</h3>
+						</div>
+					</div>
+					
+					<div class="panel-body">
+						<img src="holder.js/100%x300"/>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="col-md-1">
+				<div class="top">
+					<span class="glyphicon glyphicon-menu-up"></span>
+				</div>
+			</div>
+		</div>
+		
+		<script>			
+			$(Window).scroll(function(){
+				$('.top').show();
+				if($(window).scrollTop()<=100){
+					$('.top').hide()
+				}
+			});
+			$('.top').click(function(){
+				$(Window).scrollTop(0);
+			})
+		</script>
+			
+	</body>
+</html>

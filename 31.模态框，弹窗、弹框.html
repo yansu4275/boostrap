@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		
+		<button class="aaa1">0000</button>
+		<div id="" class="modal fade">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>头部区域</h3>
+					</div>
+					
+					<div class="modal-body">
+						<p class="lead">内容区域</p>
+						<p class="lead">内容区域</p>
+						<p class="lead">内容区域</p>
+					</div>
+					
+					<div class="modal-footer">
+						<button class="btn btn-primary save">执行 save，然后关闭弹框</button>
+						<button class="btn btn-default" data-dismiss="modal">直接关闭</button>
+
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--***************************************-->
+		<!--***************************************-->
+		<!--***************************************-->
+		<!--***************************************-->
+		
+		
+		
+		<h3 class="page-header text-center">modal 模态框、弹窗、弹框</h3>
+		
+		<p>..fade 弹窗渐入</p>
+		<p>
+			.modal('show') <br />
+			.modal('hide') <br />
+			show.bs.modal  <br />
+			hide.bs.modal  <br />
+			shown.bs.modal  <br />
+			hidden.bs.modal  <br />
+			
+		</p>
+		<p>
+			调整大小：在 ..modal-dialog 中加一个 ..modal-lg、 ..modal-sm
+		</p>
+		<hr />
+		
+		
+		
+<!--***********************************************************************************-->	
+		<p>用 button 按钮，通过查找响应的id</p>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">bs 插件</button>
+		<hr />
+		
+		<p>使用a链接，设置成按钮，直接通过a链接的路径查找id，不用再写 data-target 目标</p>
+		<a href="#mymodal" class="btn btn-primary" data-toggle="modal">a链接按钮</a>
+
+
+<!--弹出部分-->
+		<div id="mymodal" class="modal fade">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>头部区域</h3>
+					</div>
+					
+					<div class="modal-body">
+						<p class="lead">内容区域</p>
+						<p class="lead">内容区域</p>
+						<p class="lead">内容区域</p>
+					</div>
+					
+					<div class="modal-footer">
+						<button class="btn btn-primary save">执行 save，然后关闭弹框</button>
+						<button class="btn btn-default" data-dismiss="modal">直接关闭</button>
+
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+<!--弹出部分-->
+		
+		
+		<!--“执行 save，然后关闭弹框” 的js代码-->
+		<script>
+			$('.save').click(function(){
+				alert('登陆成功！');
+				$('#mymodal').modal('hide')
+			})
+		</script>
+		
+
+
+
+
+		
+		<hr />
+		<p>开启 modal，弹框的 js 原生代码</p>
+<!--******************************************************************************-->
+		<button class="btn btn-primary smodal">js 原生</button>
+		<script>
+			$('.smodal').click(function(){
+				$('#mymodal').modal('show')
+			})
+		</script>
+<!--******************************************************************************-->
+		
+		
+		
+		
+		<hr />
+<!--******************************************************************************-->
+<!--
+	在 #mymodal 显示时，背景颜色变成红色
+	在 #mymodal 隐藏时，背景颜色变成黄色
+-->
+		<script>
+			$('#mymodal').on('shown.bs.modal',function(e){
+				$('body').css({'background':'red'})
+			})
+			
+			$('#mymodal').on('hidden.bs.modal',function(e){
+				$('body').css({'background':'yellow'})
+			})
+			
+		</script>
+<!--******************************************************************************-->
+
+
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+	<hr />
+
+	</body>
+</html>

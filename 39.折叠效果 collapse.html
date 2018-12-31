@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/docs.min.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header text-center">jq 折叠效果</h3>
+		
+<!--********************************************************************************************-->		
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title"><a href="javascript:">百度新闻</a></div>
+			</div>
+			<div class="panel-body">
+				<img src="holder.js/100%x200"/>
+			</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title"><a href="javascript:">新浪新闻</a></div>
+			</div>
+			<div class="panel-body">
+				<img src="holder.js/100%x200"/>
+			</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title"><a href="javascript:">腾讯新闻</a></div>
+			</div>
+			<div class="panel-body">
+				<img src="holder.js/100%x200"/>
+			</div>
+		</div>
+		
+		
+		
+		<script>
+			$('.panel-body').hide().first().show(); /*第一个panel-body显示*/
+		
+			$('.panel-heading').click(function(){     /*点击 .panel-heading*/
+				$(this).next().slideToggle(500);     /*所点击的那个 heading 的父元素后的同级元素显示隐藏切换*/
+				
+				$('.panel-body').not($(this).next()).slideUp(500);
+				
+				
+			});
+		</script>
+		
+		
+		
+		<hr />
+<!--*****************************************************************************************-->		
+		<h3 class="page-header text-center">bs 折叠效果</h3>
+		
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  	<div class="panel panel-primary">
+			    <div class="panel-heading" role="tab" id="headingOne"  role="button" data-toggle="collapse" data-parent="#accordion" href="#aaa" aria-expanded="true" aria-controls="collapseOne">
+			      	<h4 class="panel-title">
+			        	<a>
+			        		腾讯新闻
+			        	</a>
+			      	</h4>
+			    </div>
+			    
+			    <div id="aaa" class="panel-collapse collapse in" role="tabpanel">
+			    	<div class="panel-body">
+			        	<img src="holder.js/100%x200"/>
+			      	</div>
+			    </div>
+			</div>
+			<!--************************-->
+			<div class="panel panel-primary">
+			    <div class="panel-heading" role="tab" id="headingOne" role="button" data-toggle="collapse" data-parent="#accordion" href="#bbb" aria-expanded="true" aria-controls="collapseOne">
+			      	<h4 class="panel-title">
+			        	<a>
+							百度新闻
+			        	</a>
+			      	</h4>
+			    </div>
+			    
+			    <div id="bbb" class="panel-collapse collapse" role="tabpanel">
+			    	<div class="panel-body">
+			        	<img src="holder.js/100%x200"/>
+			      	</div>
+			    </div>
+			</div>
+			<!--***************************-->		  
+		    <div class="panel panel-primary">
+			    <div class="panel-heading" role="tab" id="headingOne" role="button" data-toggle="collapse" data-parent="#accordion" href="#ccc" aria-expanded="true" aria-controls="collapseOne">
+			      	<h4 class="panel-title">
+			        	<a>
+			        		新浪新闻
+			        	</a>
+			      	</h4>
+			    </div>
+			    
+			    <div id="ccc" class="panel-collapse collapse" role="tabpanel">
+			    	<div class="panel-body">
+			        	<img src="holder.js/100%x200"/>
+			      	</div>
+			    </div>
+			</div>
+			
+		</div>		
+		
+		
+		
+		
+	</body>
+</html>

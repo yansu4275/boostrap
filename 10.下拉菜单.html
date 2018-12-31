@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header">下拉菜单</h3>
+		
+		<div class="dropdown pull-right">
+		    <button class="btn btn-primary" data-toggle="dropdown">
+		    	1.下拉菜单 div.dropdown<span class="caret"></span>
+		    </button>
+		
+			<ul class="dropdown-menu dropdown-menu-right">
+		    	<li class="dropdown-header">li..dropdown-header 灰色标题</li>
+		    	<li class="divider">li..divider 分割线</li>
+		    	<li><a href="">00000000000</a></li>
+		    	<li class="divider">..divider 分割线</li>
+		    
+		   		<li class="dropdown-header">dropdown-header 灰色标题</li>
+		    	<li class="divider">..divider 分割线</li>
+		    	<li><a href="">0000000000000</a></li>
+		    	<li class="disabled"><a href="">..disabled 禁用的选项</a></li>
+		    
+			</ul>
+		
+		</div>
+		<hr />
+
+<!--**************************************************************************-->
+		<div class="dropup">
+		    <button class="btn btn-primary" data-toggle="dropdown">
+		    2.下拉菜单 div.dropup
+		        <span class="caret"></span>
+		    </button>
+		
+			<ul class="dropdown-menu">
+		    	<li>11111111</li>
+		    	<li>1111111111</li>
+		    	<li>1111111111</li>
+		    	<li>111111111</li>
+			</ul>
+		
+		</div>
+<!--*************************************************************************-->		
+		<p>
+			..dropdown-header 灰色标题<br />
+		    ..divider 分割线<br />
+		    ..disabled 禁用的选项
+		</p>
+		
+		
+	</body>
+</html>

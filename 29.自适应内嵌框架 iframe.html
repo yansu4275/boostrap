@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		
+	</head>
+	<body class="container">
+		<h3 class="page-header text-center">自响应内嵌框架 iframe</h3>
+		<p class="lead">
+			..embed-responsive <br />
+			..embed-responsive-item <br />
+			scrolling="no" 去除滚动条<br />
+			常用于引入一个 frame 或者 embed 视频链接<br />
+		</p>
+		
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe frameborder="0" class="embed-responsive-item" width="100%" scrolling="no" src="https://v.qq.com/iframe/player.html?vid=n05520vo3hf&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		
+		
+		
+		
+		<p>16:9 效果</p>
+<!--**********************************************************************************-->		
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="01布局容器container.html" scrolling="no"></iframe>
+		</div>
+		<hr />
+		
+		<p>4:3 效果<br />直接引入其他网页</p>
+<!--********************************************************************************-->		
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe class="embed-responsive-item" src="02栅格系统row.html"></iframe>
+		</div>
+	</body>
+</html>
+  

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+<!--自动检测屏幕大小-->		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap.css"/>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		
+		<style type="text/css">
+			body{
+				position: relative;
+			}
+			.col-md-1{
+				position: fixed;
+				top: 50%;
+			}
+		</style>
+		
+		
+	</head>
+	<body class="container">
+		<div class="row">
+			<div class="col-md-1">
+				<div class="list-group"> 
+					<a id="aaa" href="javascript:" class="list-group-item text-center">111</a>
+					<a id="bbb" href="javascript:" class="list-group-item">222</a>
+					<a id="ccc" href="javascript:" class="list-group-item">333</a>
+					
+				</div>
+			</div>
+			
+			
+			<div class="col-md-11 pull-right">
+				<div class="panel panel-primary" idx="aaa">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h1>11111</h1>
+						</div>
+					</div>
+					<div class="panel-body">
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+						<p>111111</p>
+					</div>	
+					
+				</div>
+				
+				
+				<div class="panel panel-primary" idx="bbb">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h1>22222</h1>
+						</div>
+					</div>
+					<div class="panel-body">
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+						<p>222222</p>
+					</div>	
+					
+				</div>
+				
+				<div class="panel panel-primary" idx="ccc">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h1>33333</h1>
+						</div>
+					</div>
+					<div class="panel-body">
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+						<p>333333</p>
+					</div>	
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+			
+		通过页面滚动来寻找按钮
+<!--***********************************************************************-->	    
+	    <script>
+	    	$(window).scroll(function(){
+	    		$('.panel').each(function(){
+	    			st=$(window).scrollTop();            /*屏幕以滚动的高*/
+	    			pt=$(this).offset().top;             /*每组离页面顶部的距离*/
+	    			
+	    			if(st>=(pt-200)){                    /*提前200px就运行*/
+	    				idx=$(this).attr("idx");
+	    				$('#'+idx).addClass('active').siblings().removeClass('active')
+	    				/*除了'#'+idx 添加了 active 其余的 撤掉 active*/
+	    			}
+	    		})
+	    	})
+	    </script>			
+			
+			
+			
+	</body>
+</html>
